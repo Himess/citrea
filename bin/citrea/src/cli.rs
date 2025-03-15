@@ -17,7 +17,7 @@ pub(crate) struct Args {
     /// The mode in which the node runs.
     /// This determines which guest code to use.
     /// Default is Mainnet.
-    #[clap(short, long, default_value_t, value_enum)]
+    #[arg(short, long, default_value_t, value_enum)]
     pub(crate) network: NetworkArg,
 
     /// Run the development chain
